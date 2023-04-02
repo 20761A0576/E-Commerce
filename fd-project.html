@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="aboutstyles.css">
+<style>
+.but button{
+	background-color: red;
+	color: white;
+	padding: 10px 25px;
+	margin: 0px 0px;
+	font-size:15px;
+  border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+.back{
+	background-color:#00BFFF;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+			  
+	}
+		  
+  .pt{
+	color:green;
+	padding:10px;
+	font-size:50px;
+	letter-spacing:10px;
+	}
+  .pt1{
+	text-align:right;
+	color:green;
+	padding:0px;
+	font-size:20px;
+	font-family:fantasy;
+	letter-spacing:5px;
+	}
+	.but1 button{
+	background-color: red;
+	color: white;
+	padding: 20px 25px;
+	margin: 0px 5px;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+  .sea {
+    padding: 7px 8px;
+    margin-top: 7px;
+  }
+  .flex-div{
+    display: flex;
+    align-items: center;
+}
+.flex-div{
+
+    align-items: flex-start;
+    margin-top: 2px;
+}
+
+.flex-div img{
+    width: 35px;
+    margin-left: 1250px;
+    border-radius: 50%;
+}
+.search{
+  display: block;
+  text-align: left;
+  width: 600px;
+  margin: 0;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.sear{
+  display: block;
+  text-align: left;
+  width: 40px;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+		  
+</style>
+</head>
+<body>
+	<div class="back">
+  <table>
+  <tr width="100px">
+    <td><img src="icon.jpg" style="width: 60px; height: 70px;  border-radius: 50%;"></td>
+    <td><div class="pt"><i>EAT   FRESH</i></div></td>
+    <form action="search.jsp">
+        <td><input type="text" placeholder="Search.." name="search" class="search">
+        <button type="submit" class="sear"><i class="fa fa-search"></i></button></td>
+    </form>
+    <td><div><img src="imag.png" style="width: 40px; height: 60px;  border-radius: 50%;"></div></td>
+    <td><div class="pt1"> WELCOME</div></td>
+    </tr>
+  </table>
+	</div>
+<div class="topnav">
+  <a class="active" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a>
+  <a href="vegitables.html">VEGITABLES</a> 
+  <a href="fruits.html">FRUITS</a>
+  <a href="dryfruit.html">DRY FRUITS</a>
+  <a href="about.html">ABOUT US</a>
+  <form class="but" style="float:right" action="login.html"><button>Sign In</button></form>
+  <form class="but" style="float:right" action="register.html"><button>Sign UP</button></form>
+</div>
+<div class="add";>
+  <img src="add2.jpg" style="width: 100%; height: 400px; padding-left: 50px; padding-right:50px;">
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="allveg.jpg" style="width: 75%;height: 75%;">
+      <h3>VEGITABLES</h3>
+      <p class="price">Rs.799</p>
+	  <label><h3>Quantity:</label><select><option> 1</option><option> 2</option><option >3</option></select></h3>
+    <form  action="login.html" onsubmit="return validateForm()">
+	  <p><button>BUY NOW</button></p>
+    <script>
+      function validateForm() {
+      window.alert("Please login your account then Buy Item");
+          }    
+    </script>
+    </form>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="alldry.jpg" style="width: 75%;height: 75%;">
+  <h3>DRY FRUITS</h3>
+  <p class="price">Rs.4999</p>
+  <label><h3>Quantity:</label><select><option> 1</option><option> 2</option><option >3</option></select></h3>
+  <form  action="login.html" onsubmit="return validateForm()">
+	  <p><button>BUY NOW</button></p>
+    <script>
+      function validateForm() {
+      window.alert("Please login your account then Buy Item");
+          }    
+    </script>
+    </form>
+    </div>
+  </div> 
+  <div class="column">
+    <div class="card">
+      <img src="allfruits.jpg" style="width: 75%;height: 75%;">
+      <h3>FRUITS</h3>
+      <p class="price">Rs.1999</p>
+	  <label><h3>Quantity:</label><select><option> 1</option><option> 2</option><option >3</option></select></h3>
+    <form  action="login.html" onsubmit="return validateForm()">
+      <p><button>BUY NOW</button></p>
+      <script>
+        function validateForm() {
+        window.alert("Please login your account then Buy Item");
+            }    
+      </script>
+      </form>
+    </div>
+  </div> 
+  <div class="column">
+    <div class="card">
+      <img src="allvegg.jpg" style="width: 75%;height: 75%;">
+      <h3>VEGITABLES</h3>
+      <p class="price">Rs.699</p>
+	  <label><h3>Quantity:</label><select><option> 1</option><option> 2</option><option >3</option></select></h3>
+    <form  action="login.html" onsubmit="return validateForm()">
+      <p><button>BUY NOW</button></p>
+      <script>
+        function validateForm() {
+        window.alert("Please login your account then Buy Item");
+            }    
+      </script>
+      </form>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="alldryf.jpg" style="width: 75%;height: 75%;">
+      <h3>DRY FRUITS</h3>
+      <p class="price">Rs.4599</p>
+	  <label><h3>Quantity:</label><select><option> 1</option><option> 2</option><option >3</option></select></h3>
+    <form  action="login.html" onsubmit="return validateForm()">
+      <p><button>BUY NOW</button></p>
+      <script>
+        function validateForm() {
+        window.alert("Please login your account then Buy Item");
+            }    
+      </script>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

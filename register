@@ -1,0 +1,18 @@
+<html>
+	<head>
+	<title> registration form </title>
+	<head>
+	<body>
+		<form >
+			<div class="container">
+				<div class="a1">
+					<label>USERNAME :</label>
+					<input type="text" name="user" class="a1" id="user"
+				
+				<div>
+			</div>
+		</form>
+	
+	</body>
+
+</html>
