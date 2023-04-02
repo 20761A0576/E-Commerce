@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<style>
+	body { 
+	font-family: Verdana; 
+	background-image: url("4597135.jpg");
+	font-weight: bold; 
+	} 
+	.container { 
+	height: 700px; 
+	width: 600px;
+	background: transparent; 
+	box-shadow: 5px 5px 5px 5px white;
+	top: 50%; 
+	left: 75%; 
+	position: absolute; 
+	transform: translate(-50%, -50%);  
+	border-bottom-left-radius: 180px; 
+	border-top-right-radius: 150px; 
+	} 
+	.main-content { 
+	height: 80px; 
+	width:500px;
+	margin: 0px 30px 20px;
+	background: transparent; 
+	box-shadow: 5px 5px 5px 5px white;
+	border-bottom-left-radius: 90px; 
+	border-bottom-right-radius: 80px; 
+	} 
+	.text { 
+	text-align: center; 
+	font-size: 300%;  
+	color: white; 
+	}
+	.item { 
+	color: black; 
+	font-size: 25px; 
+	font-weight: bolder; 
+	} 
+	.centre-content { 
+	height: 100px;
+	width:500px;
+	margin: -10px 30px 20px; 
+	color: aliceblue; 
+	text-align: center; 
+	font-size: 20px; 
+	border-radius: 25px; 
+	padding-top: 0.5px; 
+	background: transparent; 
+	box-shadow: 5px 5px 5px 5px white;
+	} 
+	.centre-content-h1 { 
+	padding-top: 30px; 
+	padding-bottom: 30px; 
+	font-weight: normal; 
+	}  
+	.price { 
+	font-size: 60px; 
+	margin-left: 5px;
+	bottom: 50px; 
+	position: relative; 
+	}  
+	.pay-now-btn { 
+	cursor: pointer; 
+	color: black; 
+	height: 50px; 
+	width: 290px; 
+	border: none; 
+	margin: 5px 30px; 
+	background: transparent; 
+	box-shadow: 3px 3px 3px 3px white; 
+	position: relative; 
+	} 
+	.card-details { 
+	background: transparent; 
+	box-shadow: 5px 5px 5px 5px white;
+	color: black; 
+	margin: 10px 30px; 
+	padding: 10px; 
+	}   
+	.card-details p { 
+	font-size: 15px; 
+	}
+	.card-details label { 
+	font-size: 15px;
+	line-height: 30px; 
+	} 
+	.submit-now-btn { 
+	cursor: black; 
+	color: black; 
+	height: 30px; 
+	width: 240px; 
+	border: none; 
+	margin: 10px 40px; 
+	border-radius:10px;
+	box-sizing:barder-box;
+	background: transparent; 
+	box-shadow: 5px 5px 5px 5px white; 
+	}
+	button:active{transform:translateY(10px);}
+	input[type=text] {
+	padding: 8px;
+	background:transparent;
+	box-shadow: 3px 3px 3px 3px white;
+	color:white;
+	font-size:14px;
+    border-radius:10px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	</style>
+	</head> 
+	<body> 
+    <div class="container"> 
+      <div class="main-content"> 
+        <p class="text">PAYMENT</p> 
+      </div> 
+      <div class="centre-content"> <table><tr>
+        <td><h1 class="price">2499<span>/-</span></h1> </td>
+        <td><p class="item"> Buy ITEMS ! </p> </td>
+		</tr></table>
+      </div> 
+      <div class="last-content"> 
+        <button type="button" class="pay-now-btn"> 
+           Apply Coupons 
+        </button> 
+        <button type="button" class="pay-now-btn"> 
+           Pay with Netbanking 
+        </button> 
+      </div> 
+      <div class="card-details">
+        <p>Pay using Credit or Debit card</p> 
+        <div class="card-number">
+          <label> Card Number </label>
+          <input type="number" class="card-number-field" placeholder="###-###-###" required /> 
+        </div> 
+        <br/> 
+        <div class="date-number"> 
+          <label> Expiry Date </label> 
+          <input type="number" class="date-number-field" placeholder="DD-MM-YY" required  /> 
+        </div> <br>
+        <div class="cvv-number"> 
+          <label> CVV number </label> 
+          <input type="number" class="cvv-number-field" placeholder="xxx" required /> 
+        </div> <br>
+        <div class="nameholder-number"> 
+          <label> Card Holder name </label> 
+          <input type="text" class="card-name-field" placeholder="Enter your Name" required /> 
+        </div> <form action="thank.html">
+        <button type="submit" class="submit-now-btn">PAY</button> </form>
+      </div> 
+    </div> 
+	</body> 
+</html>

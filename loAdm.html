@@ -1,0 +1,95 @@
+<html>
+	<head>
+	<title>LOGIN</title>
+	<style>
+	.main {
+	width: 500px;
+	margin-top:8%;
+	margin-left:30%;
+	padding: 30px 0;
+  	font-size: 10px;
+	}
+	form {
+	background:transparent;
+	color:#778899;
+	border-radius: 3px;
+	margin-bottom: 20px 20px;
+	box-shadow: 1px 1px 1px 1px lightblue;
+	padding: 70px;
+	}
+	input[type="submit"]{
+	background-color:lightgreen;
+	box-shadow: 3px 3px 3px 3px green;
+	color: white;
+	padding: 10px 60px;
+	margin: 5px 30px;
+	font-size:16px;
+    border-radius:100px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	input[type=text],input[type=password] {
+	padding: 8px;
+	background-color:lightblue;
+	box-shadow: 3px 3px 3px 3px blue;
+	color: white;
+	font-size:14px;
+    border-radius:100px;
+	box-sizing:barder-box;
+	border:1px solid #2222;
+	baclground:#fsfsfs;
+	}
+	body{
+	background-image:url("lo.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+	a{
+	color:red;
+	}
+	</style>
+	</head>
+	<body>
+		<div class="main">
+		<form  name="form" onsubmit="return validateForm()" method="post" action="loAdm.jsp">
+			<center><font color="red" size=5px>**ADMIN LOGIN FORM**</font></center><br><br>
+			<div>
+				<font size=4px color="black">USER ID:</font><br>
+				<input type="text" name="uname" class="form-control" id="user" placeholder="USER ID / MOBILE NUMBER / EMAIL ID" size="50" autocomplete="off" action=process.jsp>
+			</div><br>
+			<div>
+				<font size=4px color="black">PASSWORD:</font><br>
+				<input type="password" name="pass" class="password" placeholder="password" size="50" autocomplete="off" action=process.jsp>
+			</div><br><br>
+			<div class="submit">
+				<input type="submit" class="btn btn-defeault btn-send" value="LOGIN" onclick="validateForm()">
+			</div>
+		</form>
+		<div><center><h2>if you login to your account?please <a href="login.html"><b>login</b></a></h2><center></div>
+		</div>
+		<script>
+		function validateForm() {
+		let user = document.forms["form"]["uname"].value;
+		let np = document.forms["form"]["pass"].value;
+		if (user == "") {
+			alert("USER ID must be filled out");
+			return false;
+		}
+		if (np == "") {
+			alert("PASSWORD must be filled out");
+			return false;
+		}
+		else if(np.length<5 || np.length >20){
+			alert("PASSWORD length must be between 5 and 20");
+			return false;
+		}
+	}
+			
+		
+		
+			
+		
+		</script>
+	</body>
+</html>
